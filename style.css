@@ -323,13 +323,13 @@ header {
   text-align: center;
   background-position: center; }
   @media screen and (max-width: 767px) {
-    header div {
+    header .section-header {
       float: none;
       display: block;
       text-align: center; } }
-  header div .jumbotron {
+  header .section-header .jumbotron {
     background: none; }
-    header div .jumbotron h2 {
+    header .section-header .jumbotron-medium-text {
       font-size: 40px;
       letter-spacing: -1px;
       color: #ffffff;
@@ -337,10 +337,10 @@ header {
       font-family: "Merriweather", sans-serif;
       margin-top: 200px; }
       @media screen and (max-width: 767px) {
-        header div .jumbotron h2 {
+        header .section-header .jumbotron-medium-text {
           margin-top: 280px;
           font-size: 28px; } }
-    header div .jumbotron h1 {
+    header .section-header .jumbotron-big-text {
       font-size: 75px;
       letter-spacing: -2px;
       color: #ffffff;
@@ -348,9 +348,9 @@ header {
       font-weight: bold;
       text-transform: uppercase; }
       @media screen and (max-width: 767px) {
-        header div .jumbotron h1 {
+        header .section-header .jumbotron-big-text {
           font-size: 52px; } }
-    header div .jumbotron h3 {
+    header .section-header .jumbotron-small-text {
       font-size: 18px;
       text-transform: uppercase;
       text-decoration: none;
@@ -364,35 +364,35 @@ header {
       line-height: 60px;
       margin: 40px 0px 60px 0px;
       display: inline-block; }
-      header div .jumbotron h3:hover {
+      header .section-header .jumbotron-small-text:hover {
         color: #8ec6f3; }
       @media screen and (max-width: 767px) {
-        header div .jumbotron h3 {
+        header .section-header .jumbotron-small-text {
           margin-bottom: 20px; } }
-  header h1 {
+  header .golden-logo {
     padding: 14px 0;
     font-family: "Leckerli One", sans-serif;
     color: #fdd135; }
     @media screen and (max-width: 767px) {
-      header h1 {
+      header .golden-logo {
         margin: 0 auto; } }
-  header ul {
+  header .list {
     list-style-type: none;
     float: right; }
-    header ul:before, header ul:after {
+    header .list:before, header .list:after {
       content: "";
       display: table;
       clear: both; }
     @media screen and (max-width: 767px) {
-      header ul {
+      header .list {
         padding: 0; } }
-    header ul li {
+    header .list .sublist {
       display: inline-block;
       margin-right: 30px; }
       @media screen and (max-width: 767px) {
-        header ul li {
+        header .list .sublist {
           width: 100%; } }
-      header ul li a {
+      header .list .sublist .list-link {
         line-height: 115px;
         padding: 0 25px;
         color: #ffffff;
@@ -402,26 +402,18 @@ header {
         font-family: "Raleway", sans-serif;
         display: block;
         text-transform: uppercase; }
-        header ul li a:hover {
+        header .list .sublist .list-link:hover {
           color: #8ec6f3;
           text-decoration: none; }
         @media screen and (max-width: 767px) {
-          header ul li a {
+          header .list .sublist .list-link {
             line-height: 40px; } }
 
-/* MOTTO, PORTFOLIO, ABOUT US, PRE-TEAM & CONTACT */
-.motto,
-.portfolio,
-.about-us,
-.pre-team,
-.contact {
+/* SECTIONS GRAY & WHITE*/
+.section-white {
   text-align: center;
   background-color: #ffffff; }
-  .motto h1,
-  .portfolio h1,
-  .about-us h1,
-  .pre-team h1,
-  .contact h1 {
+  .section-white .big-text {
     text-transform: uppercase;
     margin-top: 113px;
     font-size: 40px;
@@ -430,17 +422,9 @@ header {
     font-family: "Montserrat", sans-serif;
     font-weight: bold; }
     @media screen and (max-width: 767px) {
-      .motto h1,
-      .portfolio h1,
-      .about-us h1,
-      .pre-team h1,
-      .contact h1 {
+      .section-white .big-text {
         margin-top: 55px; } }
-  .motto h2,
-  .portfolio h2,
-  .about-us h2,
-  .pre-team h2,
-  .contact h2 {
+  .section-white .medium-text {
     font-size: 16px;
     color: #777777;
     font-family: "Roboto Slab", sans-serif;
@@ -449,24 +433,21 @@ header {
     line-height: -65px;
     margin: 0 0 60px 0; }
 
-.portfolio,
-.pre-team {
+.section-gray {
   background-color: #f7f7f7; }
-  .portfolio h2,
-  .pre-team h2 {
+  .section-gray .medium-text {
     margin-bottom: 15px; }
 
 .contact {
   background: url(https://thumbs.dreamstime.com/b/dotted-world-map-blue-led-light-futuristic-design-dark-background-vector-illustration-91865863.jpg);
   background-position: center;
   background-size: 100%; }
-  .contact form {
+  .contact .form-style {
     padding: 0 100px; }
     @media screen and (max-width: 767px) {
-      .contact form {
+      .contact .form-style {
         padding: 0 10px; } }
-  .contact h1,
-  .contact h2 {
+  .contact .contact-text {
     color: #ffffff; }
 
 /* ELEMENTS */
@@ -478,7 +459,7 @@ header {
       float: none;
       display: block;
       padding: 0 10px; } }
-  .elements div .icons-circle {
+  .elements .elements-style .icons-circle {
     background-color: #ffffff;
     border: 5px solid #fdd135;
     border-radius: 50%;
@@ -486,22 +467,22 @@ header {
     width: 80px;
     height: 80px;
     margin-top: 20px; }
-    .elements div .icons-circle i {
+    .elements .elements-style .icons-circle .el-icon {
       font-size: 36px;
       padding-top: 16px;
       padding-left: 1px;
       color: #fdd135; }
-  .elements div h2 {
+  .elements .elements-style .el-text {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-weight: 900; }
-  .elements div p {
+  .elements .elements-style .el-subtext {
     font-family: "Roboto Slab", sans-serif;
     color: #777777;
     line-height: 22px;
     margin-bottom: 80px; }
     @media screen and (max-width: 767px) {
-      .elements div p {
+      .elements .elements-style .el-subtext {
         margin-bottom: 30px; } }
 
 /* GALLERY */
@@ -509,14 +490,14 @@ header {
   padding-bottom: 100px;
   background-color: #f7f7f7;
   text-align: center; }
-  .gallery h2 {
+  .gallery .gallery-text {
     background-color: #ffffff;
     font-family: "Montserrat", sans-serif;
     margin: 0px 20px;
     font-size: 20px;
     font-weight: 900;
     padding-top: 30px; }
-  .gallery p {
+  .gallery .gallery-paragraph {
     background-color: #ffffff;
     font-family: "Roboto Slab", sans-serif;
     color: #777777;
@@ -559,9 +540,9 @@ header {
       width: 100%;
       transform: translateY(-50%);
       text-align: center; }
-      .gallery .overlay .wrapper a {
+      .gallery .overlay .wrapper .gallery-link {
         margin: 20px; }
-        .gallery .overlay .wrapper a i {
+        .gallery .overlay .wrapper .gallery-link .gallery-icon {
           background-color: #ffffff;
           border: 5px solid #ffffff;
           border-radius: 10%;
@@ -576,21 +557,21 @@ header {
   @media screen and (max-width: 767px) {
     .history {
       text-align: center; } }
-  .history ul {
+  .history .history-list {
     list-style-type: none;
     padding: 0px 20px; }
-    .history ul li {
+    .history .history-list .history-sublist {
       display: inline-block; }
-      .history ul li .right {
+      .history .history-list .history-sublist .right {
         float: right;
         text-align: left; }
         @media screen and (max-width: 767px) {
-          .history ul li .right {
+          .history .history-list .history-sublist .right {
             text-align: center; } }
-      .history ul li .center {
+      .history .history-list .history-sublist .center {
         text-align: center;
         position: relative; }
-        .history ul li .center img {
+        .history .history-list .history-sublist .center .hist-img {
           position: absolute;
           left: 25%;
           border: 5px solid #f1f1f1;
@@ -601,20 +582,20 @@ header {
           text-align: center;
           z-index: 2; }
           @media screen and (max-width: 767px) {
-            .history ul li .center img {
+            .history .history-list .history-sublist .center .hist-img {
               position: static; } }
-      .history ul li .middle {
+      .history .history-list .history-sublist .middle {
         text-align: center;
         position: relative; }
         @media screen and (min-width: 992px) {
-          .history ul li .middle::after {
+          .history .history-list .history-sublist .middle::after {
             content: '';
             display: inline-block;
             width: 300px;
             border-bottom: 3px solid #f1f1f1;
             transform: rotate(90deg);
             z-index: 1; } }
-        .history ul li .middle img {
+        .history .history-list .history-sublist .middle .hist-img {
           position: absolute;
           left: 26%;
           border: 5px solid #f1f1f1;
@@ -625,19 +606,19 @@ header {
           text-align: center;
           z-index: 2; }
           @media screen and (max-width: 767px) {
-            .history ul li .middle img {
+            .history .history-list .history-sublist .middle .hist-img {
               position: static; } }
-    .history ul h2 {
+    .history .history-list .hist-text {
       font-family: "Montserrat", sans-serif;
       font-size: 20px;
       font-weight: 900; }
-    .history ul p {
+    .history .history-list .hist-subtext {
       font-family: "Roboto Slab", sans-serif;
       color: #777777;
       line-height: 22px;
       margin-bottom: 80px; }
       @media screen and (max-width: 767px) {
-        .history ul p {
+        .history .history-list .hist-subtext {
           margin-bottom: 30px; } }
 
 /* TEAM */
@@ -645,27 +626,27 @@ header {
   text-align: center;
   background-color: #f7f7f7;
   padding-top: 70px; }
-  .team .post-team p {
+  .team .post-team-text {
     font-family: "Roboto Slab", sans-serif;
     color: #777777;
     line-height: 22px;
     margin: 60px 0 80px 0;
     font-style: italic;
     font-size: 16px; }
-  .team .person img {
+  .team .person-img {
     border: 6px solid #ffffff;
     border-radius: 50%;
     width: 220px;
     height: 220px;
     display: inline-block; }
     @media screen and (max-width: 767px) {
-      .team .person img {
+      .team .person-img {
         margin-top: 40px; } }
-  .team .person h2 {
+  .team .person-text {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 900; }
-  .team .person p {
+  .team .person-subtext {
     font-family: "Roboto Slab", sans-serif;
     font-size: 14px;
     color: #777777;
@@ -691,25 +672,25 @@ header {
 .brands {
   background-color: #ffffff;
   text-align: center; }
-  .brands img {
+  .brands-img {
     margin: 60px 0;
     width: 210px;
     height: 70px;
     filter: grayscale(100%); }
     @media screen and (max-width: 767px) {
-      .brands img {
+      .brands-img {
         margin: 20px 0; } }
 
 /* FORM */
-form {
+.form-style {
   font-family: "Montserrat", sans-serif;
   font-weight: 900; }
-  form .form-group {
+  .form-style .form-group {
     margin: 0 15px 14px 15px; }
-  form input,
-  form textarea {
+  .form-style .form-control {
     text-transform: uppercase; }
-  form .btn-success {
+  .form-style .btn-success {
+    text-transform: uppercase;
     font-size: 18px;
     text-decoration: none;
     color: #ffffff;
@@ -722,11 +703,11 @@ form {
     margin: 15px 0px 60px 0px;
     display: inline-block;
     border: none; }
-    form .btn-success:hover {
+    .form-style .btn-success:hover {
       color: #8ec6f3;
       background-color: #fdd135; }
     @media screen and (max-width: 767px) {
-      form .btn-success {
+      .form-style .btn-success {
         width: 180px;
         height: 45px;
         font-size: 14px; } }

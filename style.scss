@@ -94,7 +94,7 @@ header {
     text-align: center;
     background-position: center;
 
-    div {
+    .section-header {
 
         @media screen and (max-width: 767px) {
             float: none;
@@ -106,7 +106,7 @@ header {
         .jumbotron {
                 background: none;
 
-            h2 {
+            &-medium-text {
                 font-size: 40px;
                 letter-spacing: -1px;
                 color: $first-color;
@@ -120,7 +120,7 @@ header {
                 }
             }
 
-            h1 {
+            &-big-text {
                 font-size: 75px;
                 letter-spacing: -2px;
                 color: $first-color;
@@ -133,7 +133,7 @@ header {
                 }
             }
 
-            h3 {
+            &-small-text {
                 font-size: 18px;
                 text-transform: uppercase;
                 text-decoration: none;
@@ -159,7 +159,7 @@ header {
             }
         }
 
-        h1 {
+        .golden-logo {
             padding: 14px 0;
             font-family: $font5;
             color: $second-color;
@@ -169,7 +169,7 @@ header {
             }
         }
 
-        ul {
+        .list {
             list-style-type: none;
             float: right;
             
@@ -184,7 +184,7 @@ header {
                 padding: 0;
             }
 
-            li {
+            .sublist {
                 display: inline-block;
                 margin-right: 30px;
 
@@ -192,7 +192,7 @@ header {
                     width: 100%;
                 }
 
-                a { 
+                .list-link { 
                     line-height: 115px;
                     padding: 0 25px;
                     color: $first-color;
@@ -217,17 +217,13 @@ header {
     }
 }
 
-/* MOTTO, PORTFOLIO, ABOUT US, PRE-TEAM & CONTACT */
+/* SECTIONS GRAY & WHITE */
 
-.motto,
-.portfolio,
-.about-us,
-.pre-team,
-.contact {
+.section-white {
     text-align: center;
     background-color: $first-color;
     
-    h1 {
+    .big-text {
         text-transform: uppercase;
         margin-top: 113px;
         font-size: 40px;
@@ -241,7 +237,7 @@ header {
         }
     }
     
-    h2 {
+    .medium-text {
         font-size: 16px;
         color: $sixth-color;
         font-family: $font4;
@@ -252,11 +248,10 @@ header {
     }
 }
 
-.portfolio,
-.pre-team {
+.section-gray {
     background-color: $seventh-color;
 
-    h2 {
+    .medium-text {
         margin-bottom: 15px;
     }
 }
@@ -266,7 +261,7 @@ header {
     background-position: center;
     background-size: 100%;
     
-    form {
+    .form-style {
         padding: 0 100px;
 
         @media screen and (max-width: 767px) {
@@ -274,8 +269,7 @@ header {
         }
     } 
 
-    h1,
-    h2 {
+    .contact-text {
         color: $first-color;
     }
 }
@@ -292,7 +286,7 @@ header {
         padding: 0 10px;
     }
 
-    div {
+    .elements-style {
         
         .icons-circle {
             background-color: $first-color;
@@ -303,7 +297,7 @@ header {
             height: 80px;
             margin-top: 20px;
             
-            i {
+            .el-icon {
                 font-size: 36px;
                 padding-top: 16px;
                 padding-left: 1px;
@@ -311,13 +305,13 @@ header {
             }
         }
 
-        h2 {
+        .el-text {
             font-family: $font1;
             font-size: 20px;
             font-weight: 900;
         }
 
-        p {
+        .el-subtext {
             font-family: $font4;
             color: $sixth-color;
             line-height: 22px;
@@ -338,7 +332,7 @@ header {
     text-align: center;
     
 
-    h2 {
+    .gallery-text {
         background-color: $first-color;
         font-family: $font1;
         margin: 0px 20px;
@@ -347,7 +341,7 @@ header {
         padding-top: 30px;
     }
 
-    p {
+    .gallery-paragraph {
         background-color: $first-color;
         font-family: $font4;
         color: $sixth-color;
@@ -403,10 +397,10 @@ header {
         transform: translateY(-50%);
         text-align: center;
         
-            a {
+            .gallery-link {
                 margin: 20px;
             
-            i {
+            .gallery-icon {
                 background-color: $first-color;
                 border: 5px solid $first-color;
                 border-radius: 10%;
@@ -429,11 +423,11 @@ header {
         text-align: center;
     }
 
-    ul {
+    .history-list {
         list-style-type: none;
         padding: 0px 20px;
 
-        li {
+        .history-sublist {
             display: inline-block;
 
             .right {
@@ -449,7 +443,7 @@ header {
                 text-align: center;
                 position: relative;
                 
-                img {
+                .hist-img {
                     position: absolute;
                     left: 25%;
                     border: 5px solid $twelfth-color;
@@ -484,7 +478,7 @@ header {
                     }
                      
                 
-                img {
+                .hist-img {
                     position: absolute;
                     left: 26%;
                     border: 5px solid $twelfth-color;
@@ -503,13 +497,13 @@ header {
             }
                
 
-            h2 {
+            .hist-text {
                 font-family: $font1;
                 font-size: 20px;
                 font-weight: 900;
             }
 
-            p {
+            .hist-subtext {
                 font-family: $font4;
                 color: $sixth-color;
                 line-height: 22px;
@@ -531,7 +525,7 @@ header {
 
     .post-team {
 
-        p {
+        &-text {
             font-family: $font4;
             color: $sixth-color;
             line-height: 22px;
@@ -543,7 +537,7 @@ header {
 
     .person {
         
-        img {
+        &-img {
             border: 6px solid $first-color;
             border-radius: 50%;
             width: 220px;
@@ -555,13 +549,13 @@ header {
             }
         }
 
-        h2 {
+        &-text {
             font-family: $font1;
             font-size: 16px;
             font-weight: 900;
         }
 
-        p {
+        &-subtext {
             font-family: $font4;
             font-size: 14px;
             color: $sixth-color;
@@ -596,7 +590,7 @@ header {
     background-color: $first-color;
     text-align: center;
     
-    img {
+    &-img {
         margin: 60px 0;
         width: 210px;
         height: 70px;
@@ -610,7 +604,7 @@ header {
 
 /* FORM */
 
-form {
+.form-style {
     font-family: $font1;
     font-weight: 900;
 
@@ -618,12 +612,12 @@ form {
         margin: 0 15px 14px 15px;
     }
 
-    input,
-    textarea {
+    .form-control {
         text-transform: uppercase;
     }
 
     .btn-success {
+        text-transform: uppercase;
         font-size: 18px;
         text-decoration: none;
         color: $first-color;
