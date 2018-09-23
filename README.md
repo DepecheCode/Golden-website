@@ -1,1 +1,1 @@
-https://depechecode.github.io/Kodilla-zadanie-7.7/
+https://depechecode.github.io/My-second-website
